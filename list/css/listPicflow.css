@@ -1,0 +1,27 @@
+.ui-list-flowsection {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.ui-list-flowtitle {
+    background: #008000;
+    color: #FFF;
+    line-height: 2.5em;
+    padding-left: 1em;
+}
+
+.ui-list-cellCon {
+    width: 100%;
+    float: left;
+}
+
+.ui-list-cellCon a.ui-list-cell {
+    margin: 10px 0 0 10px;
+    float: left;
+}
+
+.ui-list-cellCon a.ui-list-cell img {
+    width: 80px;
+    height: 80px;
+}

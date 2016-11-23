@@ -1,0 +1,126 @@
+.ui-form-inputTxt {
+    width: 94%;
+    height: 36px;
+    background-color: #f7f7f7;
+    padding: 0px 3%;
+    color: #bbbbbb;
+    font-size: 16px;
+}
+
+.ui-form-inputTxt:focus {
+    border: 1px solid #d7d7d7;
+    color: #444444;
+}
+
+.ui-form-inputArea {
+    width: 94%;
+    height: 82px;
+    background-color: #f7f7f7;
+    padding: 3%;
+    color: #bbbbbb;
+    font-size: 16px;
+    overflow-y: auto;
+    resize: none;
+    box-shadow: none;
+    outline: none;
+    border: 0px;
+}
+
+.ui-form-inputArea:focus {
+    border: 1px solid #d7d7d7;
+    color: #444444;
+}
+
+.ui-form-txtArea {
+    padding: 0 3%;
+    font-size: 16px;
+    color: #837f7c;
+}
+
+.ui-form-lable {
+    color: #999999;
+    font-size: 18px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 0px 0 10px 5px;
+    vertical-align: middle;
+}
+
+.ui-form-checkArea {
+    background-color: #f7f7f7;
+    padding: 12px 0 0 3%;
+}
+
+.ui-form-checkGray {
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon/formicon.png) no-repeat -8px -7px;
+    display: inline-block;
+}
+
+.ui-form-checkLight {
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon/formicon.png) no-repeat -38px -7px;
+    display: inline-block;
+}
+
+.ui-form-radioArea {
+    background-color: #f7f7f7;
+    padding: 12px 0 0 3%;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.ui-form-radioGray {
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon/formicon.png) no-repeat -68px -7px;
+    display: inline-block;
+}
+
+.ui-form-radioLight {
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon/formicon.png) no-repeat -98px -7px;
+    display: inline-block;
+}
+
+.ui-form-selectArea {
+    border: 1px solid #d7d7d7;
+}
+
+.ui-form-down {
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon/formicon.png) no-repeat -128px -7px;
+    display: inline-block;
+    margin-right: 12px;
+    float: right;
+}
+
+.ui-form-option {
+    padding: 12px 0 0 3%;
+    border-top: 1px solid #d7d7d7;
+}
+
+.ui-form-optionChoose {
+    padding: 12px 0 0 3%;
+    border-top: 1px solid #d7d7d7;
+    background-color: #f7f7f7;
+}
+
+.ui-form-selectChoose {
+    padding: 12px 0 0 3%;
+    background-color: #f7f7f7;
+}
+
+.ui-form-button {
+    display: inline-block;
+    width: 100%;
+    background-color: #f6ae6a;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0;
+}

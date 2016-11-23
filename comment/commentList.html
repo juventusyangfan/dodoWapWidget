@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi"/>
+
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/commentList.css">
+    <link rel="stylesheet" type="text/css" href="../list/css/list.css">
+
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="../common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="../list/js/listRefresh.js"></script>
+</head>
+
+<div class="ui-refresh">
+    <div class="ui-refresh-up"></div>
+    <div class="ui-comment-list">
+        <h3 class="ui-comment-title">评论列表（<span>12</span>）</h3>
+        <div class="ui-comment-cell">
+            <div class="ui-comment-userimg"><a><img src="image/userImg.jpg"></a></div>
+            <div class="ui-comment-content">
+                <a>评论者</a>
+                <span>这是3行评论的内容，这是3行评论的内容，</span>
+            </div>
+        </div>
+        <div class="ui-comment-cell">
+            <div class="ui-comment-userimg"><a><img src="image/userImg.jpg"></a></div>
+            <div class="ui-comment-content">
+                <a>评论者</a>
+                <span>这是3行评论的内容，这是3行评论的内容，这是3行评论的内容，这是3行评论的内容，这是3行评论的内容，这是3行评论的内容</span>
+            </div>
+        </div>
+        <div class="ui-comment-cell">
+            <div class="ui-comment-userimg"><a><img src="image/userImg.jpg"></a></div>
+            <div class="ui-comment-content">
+                <a>评论者</a>
+                <span>这是3行评论的内容，这是3行评论的内容，这是3行评论的内容，</span>
+            </div>
+        </div>
+        <div class="ui-comment-cell">
+            <div class="ui-comment-userimg"><a><img src="image/userImg.jpg"></a></div>
+            <div class="ui-comment-content">
+                <a>评论者</a>
+                <span>这是3行评论的内容</span>
+            </div>
+        </div>
+        <div class="ui-comment-cell">
+            <div class="ui-comment-userimg"><a><img src="image/userImg.jpg"></a></div>
+            <div class="ui-comment-content">
+                <a>评论者</a>
+                <span>这是3行评论的内容，这是3行评论的内容，这是3行评论的内容，这是3行评论的内容，这是3行评论的内容，这是3行评论的内容</span>
+            </div>
+        </div>
+        <div class="ui-comment-cell">
+            <div class="ui-comment-userimg"><a><img src="image/userImg.jpg"></a></div>
+            <div class="ui-comment-content">
+                <a>评论者</a>
+                <span>这是3行评论的内容，这是3行评论的内容，</span>
+            </div>
+        </div>
+        <div class="ui-comment-cell">
+            <div class="ui-comment-userimg"><a><img src="image/userImg.jpg"></a></div>
+            <div class="ui-comment-content">
+                <a>评论者</a>
+                <span>这是3行评论的内容，这是3行评论的内容，</span>
+            </div>
+        </div>
+    </div>
+    <div class="ui-refresh-down"></div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('.ui-refresh').css('height', window.innerHeight).refresh({
+            load: function (dir, type) {
+                var me = this;
+
+                //这里应该用的ajax加载数据，并编写回调函数填充数据
+
+                setTimeout(function () {
+                    me.afterDataLoading(dir);
+                }, 1000);
+            }
+        });
+    });
+</script>
+</body>
+</html>

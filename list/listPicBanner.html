@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../head/css/head.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+    <link rel="stylesheet" type="text/css" href="css/listPic.css">
+
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="../common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="js/listRefresh.js"></script>
+    <title>图片banner列表</title>
+</head>
+<body class="bg">
+
+<!--全屏大图-->
+<ul class="ui-list-bigImg">
+    <li>
+        <a href="#this" class="ui-list-imgFull"><img src="image/eq/eq2.jpg"/><span
+                class="ui-imgFull-label">图片附加信息</span></a>
+
+        <div class="pCommon">
+            <div class="cf mt10"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span class="fr c_lightGray">2015-01-05</span>
+            </div>
+            <div class="ui-list-con mt5">黄带的就一直侧踢，踢到对面......</div>
+        </div>
+    </li>
+    <li>
+        <a href="#this" class="ui-list-imgFull"><img src="image/eq/eq2.jpg"/><span
+                class="ui-imgFull-label">图片附加信息</span></a>
+
+        <div class="pCommon">
+            <div class="cf mt10"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span class="fr c_lightGray">2015-01-05</span>
+            </div>
+            <div class="ui-list-con mt5">黄带的就一直侧踢，踢到对面......</div>
+        </div>
+    </li>
+    <li>
+        <a href="#this" class="ui-list-imgFull"><img src="image/eq/eq2.jpg"/><span
+                class="ui-imgFull-label">图片附加信息</span></a>
+
+        <div class="pCommon">
+            <div class="cf mt10"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span class="fr c_lightGray">2015-01-05</span>
+            </div>
+            <div class="ui-list-con mt5">黄带的就一直侧踢，踢到对面......</div>
+        </div>
+    </li>
+</ul>
+<script type="text/javascript">
+    $(function () {
+        $('.ui-list-picCon').css('height', window.innerHeight).refresh({
+            load: function (dir, type) {
+                var me = this;
+
+                //这里应该用的ajax加载数据，并编写回调函数填充数据
+
+                setTimeout(function () {
+                    me.afterDataLoading(dir);
+                }, 1000);
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/**竖向图标菜单*/
+.ui-navigator-list li {
+    font-size: 16px;
+    position: relative;
+    border-bottom: solid 1px #CCC;
+	background:url(../image/menuVerIcon.png) no-repeat 95% -20px;
+	background-size:auto 50px;
+	padding:0 5%;
+}
+.ui-navigator-list li.ui-state-active{
+	background-position:95% 15px;
+}
+.ui-navigator-list li a {
+    height:44px;
+	line-height:44px;
+    display: block;
+}
+.ui-navigator-list li a .title {
+    display: inline-block;
+    font-size: 16px;
+	margin-left:10px;
+    color: #999999;
+}
+.ui-navigator-list li.ui-state-active a .title {
+    color: #666666;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../handle/css/button.css"/>
+    <link rel="stylesheet" type="text/css" href="../head/css/head.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css"/>
+    <link rel="stylesheet" type="text/css" href="css/listText.css">
+
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="../common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="js/listRefresh.js"></script>
+    <title>常用标题列表</title>
+</head>
+<body>
+<h3 class="ui-head-listTitle"><b class="ui-head-listBorder"></b><a href="#this" class="ui-list-name">单行概要列表</a></h3>
+
+<div class="ui-refresh">
+    <div class="ui-refresh-up"></div>
+    <ul class="ui-list-ul">
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+        <li class="cf">
+            <div class="cf"><a href="#this" class="ui-list-link fl">在武汉市洪山区庙山华师</a><span
+                    class="fr c_lightGray">附加信息</span></div>
+        </li>
+    </ul>
+    <div class="ui-refresh-down"></div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('.ui-refresh').css('height', window.innerHeight).refresh({
+            load: function (dir, type) {
+                var me = this;
+
+                //这里应该用的ajax加载数据，并编写回调函数填充数据
+
+                setTimeout(function () {
+                    me.afterDataLoading(dir);
+                }, 1000);
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/contentNews.css">
+    <link rel="stylesheet" type="text/css" href="../list/css/list.css">
+    <link rel="stylesheet" type="text/css" href="../handle/css/button.css">
+    <link rel="stylesheet" type="text/css" href="../head/css/head.css">
+
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="../common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="../list/js/listRefresh.js"></script>
+
+    <title>消息流</title>
+</head>
+<body>
+<div class="ui-head cf">
+    <a href="javascript:history.go(-1)" class="ui-head-l fl"><i class="ui-head-back"></i></a>
+    <h2 class="ui-head-title fl ellipsis">消息流</h2>
+    <a href="#this" class="ui-head-r fr"><i class="ui-head-menu"></i></a>
+</div>
+<div class="ui-refresh">
+    <div class="ui-refresh-up"></div>
+    <div class="ui-content-newfra">
+        <div class="ui-content-newscell">
+            <div class="ui-content-newshead">
+                <div class="ui-content-newsicon fl">
+                    <a><img src="image/menuNews.jpg"></a>
+                </div>
+                <div class="ui-content-newstitle">
+                    <div class="ui-content-txt">发布了新鲜事</div>
+                    <div class="ui-content-date">星期六 21：33</div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="ui-content-newscon">
+                <span>@大蒲哥：《地心引力》一片讲述了我军航天女英雄刘洋在太空中遇险，通过三个自信成功逃生后，在穿越大气层时被烤焦成为焦刘洋后游泳获救的革命英雄</span>
+                <div class="ui-content-newspic">
+                    <a><img src="image/contentPic.jpg"></a>
+                    <a><img src="image/contentPic.jpg"></a>
+                    <a><img src="image/contentPic.jpg"></a>
+                </div>
+                <div class="ui-content-newstips">
+                    <div class="ui-content-newsloc">在<a style="color: #072;text-decoration: none;margin-left: 5px;">武汉市华师科技园</a></div>
+                    <div class="ui-content-newsperson">和<span><a>张三</a>、<a>李四</a></span></div>
+                </div>
+            </div>
+            <div class="ui-content-newscrl">
+                <div class="ui-content-btngroup">
+                    <a href="#this" class="buttonCommon"><i class="iconLike"></i> 喜欢 <span>150</span></a>
+                    <a href="#this" class="buttonCommon"> 评论 <span>230</span></a>
+                    <a href="#this" class="buttonCommon"><i class="iconNLike"></i> 喜欢 <span>230</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="ui-content-newscell">
+            <div class="ui-content-newshead">
+                <div class="ui-content-newsicon fl">
+                    <a><img src="image/menuNews.jpg"></a>
+                </div>
+                <div class="ui-content-newstitle">
+                    <div class="ui-content-txt">上传了资源  《公共管理服务平台操作手册》</div>
+                    <div class="ui-content-date">3小时前</div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="ui-content-newscon">
+                <span>内容：本资料仅供内部使用！《伍家岗区公共教育服务管理平台》操作手册2014 年 01 月 17 日用户操作手册修改记录制定日期生效日期</span>
+                <div>
+                    <a><img src="image/contentPic.jpg" style="width: 120px;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="ui-refresh-down"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('.ui-refresh').css('height', window.innerHeight).refresh({
+            load: function (dir) {
+                var me = this;
+
+                //这里应该用的ajax加载数据，并编写回调函数填充数据
+
+                setTimeout(function () {
+                    me.afterDataLoading(dir);
+                }, 1000);
+            }
+        });
+    });
+</script>
+</body>
+</html>

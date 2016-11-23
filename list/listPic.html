@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../head/css/head.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+    <link rel="stylesheet" type="text/css" href="css/listPic.css">
+
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="../common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="js/listRefresh.js"></script>
+    <title>常用图片列表</title>
+</head>
+<body class="bg">
+<h3 class="ui-head-listTitle"><b class="ui-head-listBorder"></b><a href="#this" class="ui-list-name">常用图片列表</a></h3>
+<!--相册列表-->
+<div class="mCommon">
+    <ul class="ui-album-list cf mt10">
+        <li>
+            <a href="#this" class="ui-album-link">
+                <span class="ui-list-imgAlbum"><img src="image/eq/eq3.jpg"/></span>
+
+                <p class="t_center mt5 c_gray">身边摄影展<span class="c_lightGray">(16张)</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="#this" class="ui-album-link">
+                <span class="ui-list-imgAlbum"><img src="image/eq/eq3.jpg"/></span>
+
+                <p class="t_center mt5 c_gray">身边摄影展<span class="c_lightGray">(16张)</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="#this" class="ui-album-link">
+                <span class="ui-list-imgAlbum"><img src="image/eq/eq3.jpg"/></span>
+
+                <p class="t_center mt5 c_gray">身边摄影展<span class="c_lightGray">(16张)</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="#this" class="ui-album-link">
+                <span class="ui-list-imgAlbum"><img src="image/eq/eq3.jpg"/></span>
+
+                <p class="t_center mt5 c_gray">身边摄影展<span class="c_lightGray">(16张)</span></p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('.ui-list-picCon').css('height', window.innerHeight).refresh({
+            load: function (dir, type) {
+                var me = this;
+
+                //这里应该用的ajax加载数据，并编写回调函数填充数据
+
+                setTimeout(function () {
+                    me.afterDataLoading(dir);
+                }, 1000);
+            }
+        });
+    });
+</script>
+</body>
+</html>

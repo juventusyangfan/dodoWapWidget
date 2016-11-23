@@ -1,0 +1,18 @@
+.ui-syllabus-frame{
+    width: 100%;
+}
+.ui-syllabus-table{
+    width: 100%;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+.ui-syllabus-table tr td{
+    width: 20%;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    text-align: center;
+    height: 35px;
+}
+.ui-syllabus-table tbody tr td{
+    font-size: 12px;
+}

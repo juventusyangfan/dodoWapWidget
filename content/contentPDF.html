@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../handle/css/button.css">
+    <link rel="stylesheet" type="text/css" href="../head/css/head.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contentPDF.css">
+
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="../common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="js/pdf.js"></script>
+    <script type="text/javascript" src="js/contentPDF.js"></script>
+    <title>PDF内容页</title>
+</head>
+<body class="bg">
+<div class="ui-head cf">
+    <a href="javascript:history.go(-1)" class="ui-head-l fl"><i class="ui-head-back"></i></a>
+
+    <h2 class="ui-head-title fl ellipsis">PDF内容页</h2>
+    <a href="#this" class="ui-head-r fr"><i class="ui-head-menu"></i></a>
+</div>
+<div class="mCommon">
+    <h1 class="ui-content-title mt10">内容标题，完整长度可换行。内容标题，完整长度可换行</h1>
+
+    <div class="c_lightGray mt5 cf">
+        <span class="fl">附加信息：2015-7-15</span><span class="fr">附加信息</span>
+    </div>
+    <div class="ui-pdf mt20">
+        <canvas id="the-canvas" style="width:100%;"></canvas>
+        <div class="cf mt20">
+            <div class="fl">
+                <input id="previous" type="button" class="buttonCommon mr10" value="上一页"><input id="next" type="button" class="buttonCommon" value="下一页">
+            </div>
+            <!--<input id="page_num" type="number" class="ui-content-pdftxt" value="1" size="4" min="1" tabindex="15" max="14">-->
+            <div class="fr c_lightGray">
+                <span>2</span> / <span id="page_count">8</span><input id="fullScreen" type="button" class="buttonCommon ml10" value="全屏">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="full" class="ui-fullpdf">
+    <div class="ui-content-fulltool">
+        <input id="previousFull" type="button" class="ui-content-pdfbtn" value="上一页"/>
+        <input id="nextFull" type="button" class="ui-content-pdfbtn" value="下一页"/>
+        <input id="pageNumFull" type="number" class="ui-content-pdftxt" value="1" size="4" min="1" tabindex="15"
+               max="14"/>
+        <label class="ui-content-pdflab">/<span id="labCountFull">0</span></label>
+        <input id="exitFullScreen" type="button" class="ui-content-pdfbtn" value="退出全屏"/>
+    </div>
+    <div style="width:100%; overflow-x:auto;">
+        <canvas id="the-full" style="width:100%;"></canvas>
+    </div>
+</div>
+<script type="text/javascript">
+    $(".ui-pdf").pdf();
+</script>
+</body>
+</html>

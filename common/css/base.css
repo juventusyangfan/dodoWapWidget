@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, input  {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;	
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font-family: arial, sans-serif;
+	color:#333;
+	font-size:14px;
+}
+a{
+	text-decoration:none;
+	color:#333;	
+}
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cf{
+		
+}
+/*超出省略号，仅限单行，并且需要设定一个宽度*/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  white-space: nowrap;
+}
+/*清除浮动 两种方式根据具体需求自选*/
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
+.t_center{
+	text-align:center;	
+}
+.iconCommon{
+	display:inline-block;
+	vertical-align:middle;	
+}
+.bg{
+	background:#ffffff;
+}
+.c_gray{
+	color:#565656;	
+}
+.c_lightGray{
+	color:#cdcdcd;
+}
+.c_pink{
+	color:#e56c69;	
+}
+.mt5{
+	margin-top:5px;	
+}
+.mt10{
+	margin-top:10px;	
+}
+.mt20{
+	margin-top:20px;	
+}
+.mr5{
+	margin-right:5px;	
+}
+.mr10{
+	margin-right:10px;	
+}
+.ml50{
+	margin-left:50px;	
+}
+.ml10{
+	margin-left:10px;	
+}
+.ml90{
+	margin-left:90px;	
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.pCommon{
+	padding:0 4.2%;	
+}
+.mCommon{
+	margin-left:4.2%;
+	margin-right:4.2%;	
+}
+.relative{
+	position:relative;	
+}

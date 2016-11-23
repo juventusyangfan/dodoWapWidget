@@ -1,0 +1,65 @@
+/* 纯文字型列表 */
+.ui-list-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ui-list-link {
+    color: #333333;
+    font-size: 16px;
+}
+
+.ui-list-ul li {
+    padding: 12px 4.2%;
+    border-bottom: 1px dotted #d6d6d6;
+}
+
+.ui-list-con {
+    line-height: 22px;
+    color: #777777;
+}
+
+/*图文结合型的列表*/
+.ui-list-img40 {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+}
+
+.ui-list-img40 img {
+    width: 100%;
+    height: 100%;
+}
+
+/*结构化数据列表*/
+.ui-list-img80 {
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.ui-list-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.buttonCommon {
+    color: #777777;
+}
+
+
+

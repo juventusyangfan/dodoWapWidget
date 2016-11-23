@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../form/css/form.css"/>
+    <link rel="stylesheet" type="text/css" href="../dialog/css/dialog.css"/>
+    <link rel="stylesheet" type="text/css" href="css/submit.css"/>
+
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="../common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="../dialog/js/dialog.js"></script>
+    <script type="text/javascript" src="js/submit.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="mCommon">
+    <div class="mt10">
+        <input type="password" class="ui-form-inputTxt" placeholder="这是我的密码">
+    </div>
+    <div class="mt10">
+        <textarea class="ui-form-inputArea" placeholder="内容"></textarea>
+    </div>
+    <div class="mt10">
+        <div class="js_imgCon">
+            <a href="javascript:;" class="ui-submit-image">
+                <img src="image/eq/uploadEq.png" style="width: 100%;height: 100%;">
+            </a>
+        </div>
+            <a href="javascript:;" class="ui-submit-upload js_imgUpload">
+                <span></span>
+                <input type="file" id="imgUpload" name="imgUpload" multiple="multiple">
+            </a>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(".js_imgUpload").upload({
+        fileInput:$("#imgUpload").get(0)
+    });
+</script>
+</body>
+</html>

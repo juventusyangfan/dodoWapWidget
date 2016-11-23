@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <title>表单提交</title>
+</head>
+<body>
+<div class="mCommon">
+    <div class="mt10">
+        <input type="text" class="ui-form-inputTxt" placeholder="这是我的用户名">
+    </div>
+    <div class="mt10">
+        <input type="password" class="ui-form-inputTxt" placeholder="这是我的密码">
+    </div>
+    <div class="mt10">
+        <textarea class="ui-form-inputArea" placeholder="内容"></textarea>
+    </div>
+    <div class="mt10">
+        <div class="ui-form-checkArea">
+            <span class="js-checkbox"><a class="ui-form-checkGray"></a></span>
+            <span class="js-checkbox"><a class="ui-form-checkLight ml10"></a><label class="ui-form-lable">是否选中这个</label></span>
+        </div>
+    </div>
+    <div class="mt10">
+        <div class="ui-form-txtArea">这是单行说明，也可以多行；这是单行说明，也可以多行；</div>
+    </div>
+    <div class="mt10">
+        <div class="js-radio">
+            <div class="ui-form-radioArea"><a class="ui-form-radioGray"></a><label class="ui-form-lable">这是第一个选项</label>
+            </div>
+            <div class="ui-form-radioArea"><a class="ui-form-radioLight"></a><label class="ui-form-lable">这是第二个选项</label>
+            </div>
+            <div class="ui-form-radioArea"><a class="ui-form-radioGray"></a><label class="ui-form-lable">这是第三个选项</label>
+            </div>
+        </div>
+    </div>
+    <div class="mt10">
+        <div class="ui-form-selectArea js-select">
+            <div class="ui-form-selectChoose"><label class="ui-form-lable">列表项2</label><a class="ui-form-down ml10"></a>
+            </div>
+            <div class="ui-form-optionArea">
+                <div class="ui-form-option js-option"><label class="ui-form-lable">列表项1</label>
+                </div>
+                <div class="ui-form-optionChoose js-option"><label class="ui-form-lable">列表项2</label>
+                </div>
+                <div class="ui-form-option js-option"><label class="ui-form-lable">列表项3</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt10">
+        <a class="ui-form-button">按&nbsp;&nbsp;&nbsp;&nbsp;钮</a>
+    </div>
+</div>
+<script type="text/javascript">
+    //操作checkbox
+    $(".js-checkbox").checkbox();
+    //操作radio
+    $(".js-radio").radio();
+    //操作select
+    $(".js-select").select();
+</script>
+</body>
+</html>

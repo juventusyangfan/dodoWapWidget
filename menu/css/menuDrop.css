@@ -1,0 +1,45 @@
+/*下拉菜单样式*/
+.ui-popover.ui-in .ui-menuDrop{
+    display: block;
+    opacity: 1;
+}
+.ui-menuDrop{
+	position:absolute;
+	top:44px;
+	left:0;
+	width:100%;
+	display:none;
+}
+.ui-menuTrail{
+	position:absolute;
+	width:18%;
+	background:url(../image/dropTrail.png) no-repeat;
+	background-size:100% auto;
+	right:0;
+	top:-8px;
+	height:10px;	
+}
+.ui-menuDrop-nav{
+	background:#f7f7f7;
+	padding-top:20px;
+	border-bottom:1px solid #d7d7d7;	
+}
+.ui-menuDrop-nav li{
+	width:25%;
+	float:left;
+	text-align:center;
+	margin-bottom:10px;
+}
+.ui-iconBg{
+	background:#eeeeee;
+	width:44px;
+	height:44px;
+	border-radius:100%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:5px;
+}
+.ui-iconBg .iconCommon {
+	margin-top:12px;	
+}

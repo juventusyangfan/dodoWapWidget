@@ -1,0 +1,104 @@
+@import "../css/base.css";
+/* menu的公共样式*/
+/* 公共图标库的样式 */
+.iconCommon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.iconNews,
+.iconUpPhotoes,
+.iconHomeWork,
+.iconMsg,
+.iconNotice,
+.iconNewsFocus,
+.iconUpPhotoesFocus,
+.iconHomeWorkFocus,
+.iconMsgFocus,
+.iconNoticeFocus {
+  background: url(../../common/image/icon_menu.png) no-repeat;
+  background-size: 300px auto;
+  width: 23px;
+  height: 20px;
+}
+.iconNews {
+  background-position: 0 0;
+}
+.iconUpPhotoes {
+  background-position: -31px 0;
+}
+.iconHomeWork {
+  background-position: -61px 0;
+}
+.iconMsg {
+  background-position: -91px 0;
+}
+.iconNotice {
+  background-position: -123px 0;
+}
+.iconNewsFocus {
+  background-position: -154px 0;
+}
+.iconUpPhotoesFocus {
+  background-position: -184px 0;
+}
+.iconHomeWorkFocus {
+  background-position: -215px 0;
+}
+.iconMsgFocus {
+  background-position: -247px 0;
+}
+.iconNoticeFocus {
+  background-position: -278px 0;
+}
+/**固定图标菜单*/
+.ui-navigator-list {
+  width: 100%;
+  display: -webkit-box;
+}
+.ui-navigator-list li {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.ui-navigator-list li a {
+  text-decoration: none;
+  color: #808080;
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+}
+.ui-navigator-list li a span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  color: #666666;
+}
+.ui-navigator-list li.ui-state-hover a,
+.ui-navigator-list li.ui-state-active a {
+  color: #FFFF00;
+}
+.navPic li {
+  padding: 10px 0 10px;
+  background: url(../image/line.png) right center no-repeat;
+  background-size: auto 50%;
+}
+.ui-state-active .iconNews {
+  background-position: -152px 0;
+}
+.ui-state-active .iconUpPhotoes {
+  background-position: -183px 0;
+}
+.ui-state-active .iconHomeWork {
+  background-position: -215px 0;
+}
+.ui-state-active .iconMsg {
+  background-position: -247px 0;
+}
+.ui-state-active .iconNotice {
+  background-position: -277px 0;
+}

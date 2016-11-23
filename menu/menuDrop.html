@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/menubase.css">
+    <link rel="stylesheet" type="text/css" href="css/menuDrop.css"/>
+	<link rel="stylesheet" type="text/css" href="../head/css/head.css">
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="../common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="js/menuDrop.js"></script>
+    <title>下拉菜单</title>
+</head>
+<body class="bg">
+	<div class="ui-head cf relative ">
+		<a href="javascript:history.go(-1)" class="ui-head-l fl"><i class="ui-head-back"></i></a>
+		<h2 class="ui-head-title fl ellipsis">新鲜事儿新鲜事儿新鲜事儿新鲜事儿</h2>
+		<a href="#this" class="ui-head-r fr" id="js_menuDrop"><i class="ui-head-menu"></i></a>
+	</div>
+
+
+<script type="text/javascript">
+    $('#js_menuDrop').popover({
+        content: '<div class="ui-menuDrop ui-navigator-list">'+
+					'<b class="ui-menuTrail"></b>'+
+					'<ul class="ui-menuDrop-nav cf">'+
+						'<li class="ui-state-active"><a><span class="ui-iconBg"><i class="iconCommon iconNews"></i></span><span>新鲜事儿</span></a></li>'+
+						'<li><a><span class="ui-iconBg"><i class="iconCommon iconUpPhotoes"></i></span><span>传照片</span></a></li>'+
+						'<li><a><span class="ui-iconBg"><i class="iconCommon iconHomeWork"></i></span><span>发作业</span></a></li>'+
+						'<li><a><span class="ui-iconBg"><i class="iconCommon iconMsg"></i></span><span>站内信</span></a></li>'+
+						'<li><a><span class="ui-iconBg"><i class="iconCommon iconNotice"></i></span><span>系统通知</span></a></li>'+
+					'</ul>'+
+				'</div>'
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/*ppt阅读器*/
+.ui-content-viewtool {
+    text-align: center;
+    padding: 10px 0;
+}
+.ui-fullpdf {
+    display: none;
+}
+.ui-content-fulltool {
+    display: none;
+    position: fixed;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/*按钮*/
+.ui-content-pdfbtn {
+    height: 24px;
+    line-height: 10px;
+    vertical-align: baseline;
+    margin-left: 5px;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    background: #ddd;
+    min-width: 2em;
+    text-align: center;
+}
+
+.ui-content-pdftxt {
+    height: 22px;
+    padding: 0 3px;
+    vertical-align: baseline;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+}
+
+.ui-content-pdflab{
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+
+/*==ppt阅读器==*/
+

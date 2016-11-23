@@ -1,0 +1,67 @@
+/**固定图标菜单*/
+.iconNews,.iconUpPhotoes,.iconHomeWork,.iconMsg,.iconNotice,.iconNewsFocus,.iconUpPhotoesFocus,.iconHomeWorkFocus,.iconMsgFocus,.iconNoticeFocus{
+    background:url(../image/icon_menu.png) no-repeat;
+    background-size:300px auto;
+    width:23px;
+    height:20px;
+}
+.iconNews{
+    background-position:0 0;
+}
+.iconUpPhotoes{
+    background-position:-30px 0;
+}
+.iconHomeWork{
+    background-position:-60px 0;
+}
+.iconMsg{
+    background-position:-90px 0;
+}
+.iconNotice{
+    background-position:-122px 0;
+}
+.ui-navigator-list li a span {
+    display: inline-block;
+    padding: 10px 10%;
+    color: #999999;
+}
+.ui-navigator-list li.ui-state-active a span {
+    color: #666666;
+}
+.ui-state-active .iconNews{
+    background-position:-153px 0;
+}
+.ui-state-active .iconUpPhotoes{
+    background-position:-184px 0;
+}
+.ui-state-active .iconHomeWork{
+    background-position:-216px 0;
+}
+.ui-state-active .iconMsg{
+    background-position:-246px 0;
+}
+.ui-state-active .iconNotice{
+    background-position:-276px 0;
+}
+.ui-navigator{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.ui-navigator-list {
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+    background:#fff;
+    border:1px solid #d9d9d9;
+}
+.ui-navigator-list li {
+    font-size: 14px;
+    text-align: center;
+    -moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;
+    padding:10px 0 10px;
+    background:url(../image/line.png) right center no-repeat;
+    background-size: auto 50%;
+}

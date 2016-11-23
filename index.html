@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="menu/css/menuScroll.css"/>
+    <link rel="stylesheet" type="text/css" href="head/css/head.css"/>
+    <link rel="stylesheet" type="text/css" href="list/css/list.css">
+    <link rel="stylesheet" type="text/css" href="list/css/listText.css">
+
+    <script type="text/javascript" src="common/js/zepto.js"></script>
+    <script type="text/javascript" src="common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="menu/js/menu.js"></script>
+    <script type="text/javascript" src="menu/js/menuScroll.js"></script>
+    <script type="text/javascript" src="list/js/listRefresh.js"></script>
+    <title>多多wap组件导航</title>
+
+    <style type="text/css">
+        .js-index-content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrap">
+    <div id="nav">
+        <ul>
+            <li><a href="javascript:;" name="menu">菜单</a></li>
+            <li><a href="javascript:;" name="list">列表</a></li>
+            <li><a href="javascript:;" name="content">内容</a></li>
+            <li><a href="javascript:;" name="head">导航</a></li>
+            <li><a href="javascript:;" name="form">表单</a></li>
+            <li><a href="javascript:;" name="submit">发布</a></li>
+            <li><a href="javascript:;">基本部件</a></li>
+            <li><a href="javascript:;" name="handle">其他部件</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="js-index-content" data-name="menu">
+    <h3 class="ui-head-listTitle"><b class="ui-head-listBorder"></b><a href="#this" class="ui-list-name">菜单</a></h3>
+
+    <div class="ui-refresh">
+        <div class="ui-refresh-up"></div>
+        <ul class="ui-list-ul">
+            <li class="cf">
+                <div class="cf"><a href="menu/menuBroad.html" class="ui-list-link fl">横向固定菜单</a><span
+                        class="fr c_lightGray">menu</span></div>
+                <div class="ui-list-con mt5">组件存放在menuBroad.html，需要引用menu.js文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="menu/menuScroll.html" class="ui-list-link fl">横向滑动菜单</a><span
+                        class="fr c_lightGray">menu</span></div>
+                <div class="ui-list-con mt5">组件存放在menuScroll.html，需要引用menu.js文件，当引用menuScroll.js时菜单可滑动</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="menu/menuPic.html" class="ui-list-link fl">固定图标菜单</a><span
+                        class="fr c_lightGray">menu</span></div>
+                <div class="ui-list-con mt5">组件存放在menuPic.html，需要引用menu.js文件和menubase.css、menuPic.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="menu/menuPicVertical.html" class="ui-list-link fl">竖向图标菜单</a><span
+                        class="fr c_lightGray">menu</span></div>
+                <div class="ui-list-con mt5">
+                    组件存放在menuPicVertical.html，需要引用menu.js文件和menubase.css、menuPicVertical.css文件
+                </div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="menu/menuDrop.html" class="ui-list-link fl">下拉菜单</a><span
+                        class="fr c_lightGray">menu</span></div>
+                <div class="ui-list-con mt5">组件存放在menuDrop.html，需要引用menuDrop.js文件和menu.css、menuDrop.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="dialog/dialogMenu.html" class="ui-list-link fl">弹出菜单</a><span
+                        class="fr c_lightGray">dialog、menu</span></div>
+                <div class="ui-list-con mt5">dialog/dialogMenu.html，需要引入dialog.js文件和dialog.css文件</div>
+            </li>
+        </ul>
+        <div class="ui-refresh-down"></div>
+    </div>
+</div>
+
+<div class="js-index-content" data-name="list">
+    <h3 class="ui-head-listTitle"><b class="ui-head-listBorder"></b><a href="#this" class="ui-list-name">列表</a></h3>
+
+    <div class="ui-refresh">
+        <div class="ui-refresh-up"></div>
+        <ul class="ui-list-ul">
+            <li class="cf">
+                <div class="cf"><a href="list/listNormal.html" class="ui-list-link fl">常规标题列表</a><span
+                        class="fr c_lightGray">list</span></div>
+                <div class="ui-list-con mt5">组件存放在listNormal.html，需要引用list.css、listBase.css和listText.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="list/listResSingle.html" class="ui-list-link fl">单行概要列表</a><span
+                        class="fr c_lightGray">list</span></div>
+                <div class="ui-list-con mt5">组件存放在listResSingle.html，需要引用list.css、listBase.css和listText.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="list/listResMulti.html" class="ui-list-link fl">多行概要列表</a><span
+                        class="fr c_lightGray">list</span></div>
+                <div class="ui-list-con mt5">组件存放在listResMulti.html，需要引用list.css、listBase.css和listText.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="list/listPicSingle.html" class="ui-list-link fl">带图标的单行概要列表</a><span
+                        class="fr c_lightGray">list</span></div>
+                <div class="ui-list-con mt5">组件存放在listPicSingle.html，需要引用list.css、listBase.css和listText.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="list/listPicMulti.html" class="ui-list-link fl">带图标的多行概要列表</a><span
+                        class="fr c_lightGray">list</span></div>
+                <div class="ui-list-con mt5">组件存放在listPicMulti.html，需要引用list.css、listBase.css和listText.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="list/listPicBanner.html" class="ui-list-link fl">图片banner列表</a><span
+                        class="fr c_lightGray">list</span></div>
+                <div class="ui-list-con mt5">组件存放在listPicBanner.html，需要引用list.css、listBase.css和listPic.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="list/listPic.html" class="ui-list-link fl">常用图片列表</a><span
+                        class="fr c_lightGray">list</span></div>
+                <div class="ui-list-con mt5">组件存放在listPic.html，需要引用list.css、listBase.css和listPic.css文件，主要用于相册的展示</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="list/listPicflow.html" class="ui-list-link fl">图片流式列表</a><span
+                        class="fr c_lightGray">list</span></div>
+                <div class="ui-list-con mt5">组件存放在listPicflow.html，需要引用list.css、listBase.css和listPic.</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="list/listDate.html" class="ui-list-link fl">结构化数据列表</a><span
+                        class="fr c_lightGray">list</span></div>
+                <div class="ui-list-con mt5">组件存放在listDate.html，需要引用list.css、listBase.css和listPic.</div>
+            </li>
+        </ul>
+        <div class="ui-refresh-down"></div>
+    </div>
+</div>
+
+<div class="js-index-content" data-name="content">
+    <h3 class="ui-head-listTitle"><b class="ui-head-listBorder"></b><a href="#this" class="ui-list-name">内容</a></h3>
+
+    <div class="ui-refresh">
+        <div class="ui-refresh-up"></div>
+        <ul class="ui-list-ul">
+            <li class="cf">
+                <div class="cf"><a href="content/contentNormal.html" class="ui-list-link fl">一般文本块</a><span
+                        class="fr c_lightGray">content</span></div>
+                <div class="ui-list-con mt5">组件存放在contentNormal.html，需要引用head.css、和content.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="content/content.html" class="ui-list-link fl">包含图片、音频、视频等的富文本内容</a><span
+                        class="fr c_lightGray">content</span></div>
+                <div class="ui-list-con mt5">组件存放在content.html，需要引用content.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="content/contentPDF.html" class="ui-list-link fl">PDF内容</a><span
+                        class="fr c_lightGray">content</span></div>
+                <div class="ui-list-con mt5">
+                    组件存放在contentPDF.html，需要引用pdf.js和contentPDF.js文件，content.css和contentPDF.css文件
+                </div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="content/contentNews.html" class="ui-list-link fl">结构化内容-消息流</a><span
+                        class="fr c_lightGray">content-结构化内容</span></div>
+                <div class="ui-list-con mt5">组件存放在contentNews.html，需要引用contentNews.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="content/contentSyllabus.html" class="ui-list-link fl">结构化内容-课程表</a><span
+                        class="fr c_lightGray">content-结构化内容</span></div>
+                <div class="ui-list-con mt5">组件存放在contentSyllabus.html，需要引用contentSyllabus.css文件</div>
+            </li>
+        </ul>
+        <div class="ui-refresh-down"></div>
+    </div>
+</div>
+
+<div class="js-index-content" data-name="head">
+    <h3 class="ui-head-listTitle"><b class="ui-head-listBorder"></b><a href="#this" class="ui-list-name">导航</a></h3>
+
+    <div class="ui-refresh">
+        <ul class="ui-list-ul">
+            <li class="cf">
+                <div class="cf"><a href="head/head.html" class="ui-list-link fl">顶部标题导航</a><span
+                        class="fr c_lightGray">head</span></div>
+                <div class="ui-list-con mt5">组件存放在head.html，需要引用head.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="head/bottomPic.html" class="ui-list-link fl">底部图标导航</a><span
+                        class="fr c_lightGray">head</span></div>
+                <div class="ui-list-con mt5">组件存放在bottomPic.html，需要引用menu.js和bottomPic.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="head/bottomTxt.html" class="ui-list-link fl">底部文本导航</a><span
+                        class="fr c_lightGray">head</span></div>
+                <div class="ui-list-con mt5">组件存放在bottomTxt.html，需要引用menu.js和bottomTxt.css文件</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="js-index-content" data-name="handle">
+    <h3 class="ui-head-listTitle"><b class="ui-head-listBorder"></b><a href="#this" class="ui-list-name">其他部件</a></h3>
+
+    <div class="ui-refresh">
+        <ul class="ui-list-ul">
+            <li class="cf">
+                <div class="cf"><a href="handle/button.html" class="ui-list-link fl">喜欢、评论等按钮</a><span
+                        class="fr c_lightGray">handle</span></div>
+                <div class="ui-list-con mt5">组件存放在handle/button.html，需要引用button.css文件</div>
+            </li>
+            <li class="cf">
+                <div class="cf"><a href="handle/slider.html" class="ui-list-link fl">图片轮播</a><span
+                        class="fr c_lightGray">handle</span></div>
+                <div class="ui-list-con mt5">组件存放在handle/slider.html，需要引用slider.js和slider.css文件</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="js-index-content" data-name="form">
+    <h3 class="ui-head-listTitle"><b class="ui-head-listBorder"></b><a href="#this" class="ui-list-name">表单</a></h3>
+
+    <div class="ui-refresh">
+        <ul class="ui-list-ul">
+            <li class="cf">
+                <div class="cf"><a href="form/form.html" class="ui-list-link fl">多表单内容提交</a><span
+                        class="fr c_lightGray">form</span></div>
+                <div class="ui-list-con mt5">组件存放在form/form.html，form.css和form.js文件。其中包括自定义checkbox、radio、select控件使用</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="js-index-content" data-name="submit">
+    <h3 class="ui-head-listTitle"><b class="ui-head-listBorder"></b><a href="#this" class="ui-list-name">发布</a></h3>
+
+    <div class="ui-refresh">
+        <ul class="ui-list-ul">
+            <li class="cf">
+                <div class="cf"><a href="submit/submit.html" class="ui-list-link fl">附加内容提交</a><span
+                        class="fr c_lightGray">submit</span></div>
+                <div class="ui-list-con mt5">组件存放在submit/submit.html，submit/submit.css和submit.js文件。图片的上传组件</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('#nav').navigator({
+        select: function (e, index, li) {
+            var curName = $(li).find('a').attr('name');
+            $('.js-index-content').css('display', 'none');
+            var mainObj = $('.js-index-content[data-name="' + curName + '"]').css('display', 'block');
+
+            if (mainObj.length > 0 && mainObj.find('.ui-refresh-wrapper').length <= 0) {
+                $('.ui-refresh').eq(mainObj.index() - 1).css('height', window.innerHeight - ($('header').height() || 42)).refresh({
+                    load: function (dir, type) {
+                        var me = this;
+
+                        //这里应该用的ajax加载数据，并编写回调函数填充数据
+
+                        setTimeout(function () {
+                            me.afterDataLoading(dir);
+                        }, 1000);
+                    }
+                });
+            }
+        }
+    });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* CSS Document */
+.ui-head{
+	height:44px;
+	background:#259755;
+}
+.ui-head-l,.ui-head-r{
+	width:18%;
+	display:block;
+	height:100%;
+	text-align:center;
+	line-height:44px;
+	color:#fff;
+}
+.ui-head-back,.ui-head-menu{
+	display:inline-block;
+	background:url(../image/head.png) no-repeat;
+	background-size:auto 100px;
+	width:38px;
+	height:44px;		
+}
+.ui-head-back{
+	background-position:center 11px;
+}
+.ui-head-menu{
+	background-position:center -29px;
+}
+.ui-head-r:hover{
+	background-color:#258b50;	
+}
+.ui-head-r:hover .ui-head-menu{
+	background-position:center -70px;	
+}
+.ui-head-title{
+	width:64%;
+	text-align:center;
+	border-left:1px solid rgba(35,35,35,0.1);
+	border-right:1px solid rgba(35,35,35,0.1);
+	height:33px;
+	margin-top:5px;
+	box-sizing:border-box;
+	line-height:33px;
+	color:#fff;
+	font-size:18px;
+	padding:0 10px;
+}
+/* 列表的标题 */
+.ui-head-listTitle{
+    height:29px;
+    background:#f7f7f7;
+    padding:15px 4.2% 0;
+}
+.ui-head-listBorder{
+    height:14px;
+    width:3px;
+    background:#999999;
+    font-weight:bold;
+    display:inline-block;
+    border-radius:2px;
+    vertical-align:middle;
+    margin-top:-2px;
+    margin-right:10px;
+}

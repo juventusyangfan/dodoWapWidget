@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>弹出框</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/dialog.css"/>
+
+    <script type="text/javascript" src="../common/js/zepto.js"></script>
+    <script type="text/javascript" src="../common/js/wapCommon.js"></script>
+    <script type="text/javascript" src="../common/js/wapWidget.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+
+</head>
+<body>
+<div id="top"></div>
+<div class="article">
+    <div class="btns">
+        <a id="btn" class="ui-btn ui-btn-text-only" style="-webkit-tap-highlight-color: rgba(255, 255, 255, 0);"><span class="ui-btn-text">显示菜单弹框</span></a>
+    </div>
+</div>
+<script>
+    var dialogShow = dodoWap.Dialog({
+        width: 288,
+        autoOpen: false,
+        closeBtn: false,
+        buttons: {
+            '挥泪退出': function () {
+                this.close();
+            },
+            '奥，我点错了': function () {
+                this.close();
+            }
+        },
+        title: '',
+        content: '<div style="padding: 24px 0; text-align: center;color:#333333;">你确定想加入小站吗？</div>'
+    });
+    dialogShow._options['_wrap'].addClass('share-dialog');
+
+
+    $('#btn').click(function(){
+        dialogShow.open();
+    });
+</script>
+</body>
+</html>
